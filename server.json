@@ -1,19 +1,28 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
-  "name": "com.getklo/klo",
-  "description": "Native macOS video editor your agent can drive: 83 timeline tools (cut, caption, grade, generate music and voice, export ProRes) while media stays on the user's Mac.",
-  "repository": { "url": "https://github.com/elvniv/klo-mcp", "source": "github" },
-  "version_detail": { "version": "2.7.0" },
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.elvniv/klo-mcp",
+  "description": "Drive klo, the native Mac video editor, from any agent: 83 timeline tools (cut, caption, grade, generate music and voice, export ProRes) while media stays on the user's Mac.",
+  "repository": {
+    "url": "https://github.com/elvniv/klo-mcp",
+    "source": "github"
+  },
+  "version": "2.7.0",
   "packages": [
     {
-      "registry_name": "npm",
-      "name": "klo-mcp",
+      "registryType": "npm",
+      "identifier": "klo-mcp",
       "version": "2.7.0",
-      "runtime_hint": "npx",
-      "environment_variables": [
-        { "name": "KLO_MCP_TOKEN", "description": "Connection token from klo Settings → Connections", "is_required": true, "is_secret": true }
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "KLO_MCP_TOKEN",
+          "description": "Connection token from klo Settings > Connections",
+          "isRequired": true,
+          "isSecret": true
+        }
       ]
     }
-  ],
-  "remotes": []
+  ]
 }

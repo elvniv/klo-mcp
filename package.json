@@ -2,14 +2,37 @@
   "name": "klo-mcp",
   "version": "2.7.0",
   "description": "MCP server for klo, the native Mac video editor you talk to. Gives Claude Code, Codex, Cursor, or any MCP client a real timeline: 83 editing tools, media stays on your Mac.",
-  "bin": { "klo-mcp": "./klo-mcp.mjs" },
+  "bin": {
+    "klo-mcp": "./klo-mcp.mjs"
+  },
   "type": "module",
-  "engines": { "node": ">=18" },
-  "files": ["klo-mcp.mjs", "README.md", "LICENSE"],
-  "keywords": ["mcp", "model-context-protocol", "video-editing", "video-editor", "claude", "agent", "macos", "ai"],
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "klo-mcp.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "video-editing",
+    "video-editor",
+    "claude",
+    "agent",
+    "macos",
+    "ai"
+  ],
   "homepage": "https://getklo.com",
-  "repository": { "type": "git", "url": "git+https://github.com/elvniv/klo-mcp.git" },
-  "bugs": { "email": "support@getklo.com" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elvniv/klo-mcp.git"
+  },
+  "bugs": {
+    "email": "support@getklo.com"
+  },
   "author": "klorah inc. (https://getklo.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "mcpName": "io.github.elvniv/klo-mcp"
 }
