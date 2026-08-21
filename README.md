@@ -1,4 +1,13 @@
-# klo-mcp
+<p align="center">
+  <a href="https://getklo.com"><img src="https://getklo.com/og.jpg?v=3" alt="klo, the native Mac video editor you talk to" width="720" /></a>
+</p>
+
+# klo-mcp: the video editing MCP server
+
+[![npm](https://img.shields.io/npm/v/klo-mcp?color=a8c152)](https://www.npmjs.com/package/klo-mcp)
+[![license](https://img.shields.io/badge/connector-MIT-a8c152)](./LICENSE)
+![platform](https://img.shields.io/badge/platform-macOS%2013%2B-0a0a0a)
+[![site](https://img.shields.io/badge/getklo.com-visit-f1ece5)](https://getklo.com)
 
 Give your coding agent a real video editor.
 
@@ -117,6 +126,31 @@ This package is the thin connector; the editor itself is
 [klo](https://getklo.com). The connector mirrors the copy bundled inside the
 app, and its major.minor version tracks the app release it shipped with.
 
-Read more: [Give your coding agent a real timeline](https://getklo.com/blog/mcp)
+## FAQ
+
+**Can Claude Code edit videos?**
+With klo installed, yes. Claude Code connects to this server and gains cutting,
+captions, grading, generated music and voiceover, and ProRes export on a real
+timeline. See [what agentic video editing is](https://getklo.com/blog/agentic-video-editing).
+
+**Is this an ffmpeg wrapper?**
+No. Tools operate on klo's timeline (ripple edits, word-gap cuts, undo), and
+nothing is re-encoded between steps. [Why that design](https://getklo.com/blog/mcp).
+
+**Does my footage get uploaded?**
+No. Media stays on the Mac; the server exchanges timeline operations and
+compact results. Details in klo's [privacy policy](https://getklo.com/privacy).
+
+**What does it cost?**
+Driving the timeline is free with your own model. Generation tools use klo
+account credits. [Pricing](https://getklo.com/#plans).
+
+## Related reading
+
+- [Give your coding agent a real timeline](https://getklo.com/blog/mcp)
+- [What is agentic video editing?](https://getklo.com/blog/agentic-video-editing)
+- [klo changelog](https://getklo.com/changelog): the app ships several times a week
+- [Download klo for Mac](https://getklo.com/api/download)
 
 MIT (this connector). klo is a product of klorah inc.
+[getklo.com](https://getklo.com)
